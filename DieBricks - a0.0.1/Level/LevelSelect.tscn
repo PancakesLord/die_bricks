@@ -1,0 +1,208 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Level/font/LevelFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Level/Scripts/LevelSelect.gd" type="Script" id=2]
+[ext_resource path="res://TitleScreen/Assets/Fade_In/FadeIn.tscn" type="PackedScene" id=3]
+
+[node name="LevelSelect" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ClassicLevels" type="Control" parent="Menu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitleClassic" type="Label" parent="Menu/ClassicLevels"]
+margin_left = 200.0
+margin_top = 20.0
+margin_right = 450.0
+margin_bottom = 60.0
+custom_fonts/font = ExtResource( 1 )
+text = "Classic Levels"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelOne" type="Button" parent="Menu/ClassicLevels"]
+margin_left = 32.0
+margin_top = 80.0
+margin_right = 150.0
+margin_bottom = 112.0
+text = "Level 1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelTwo" type="Button" parent="Menu/ClassicLevels"]
+margin_left = 180.0
+margin_top = 80.0
+margin_right = 298.0
+margin_bottom = 112.0
+disabled = true
+text = "Level 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelThree" type="Button" parent="Menu/ClassicLevels"]
+margin_left = 340.0
+margin_top = 80.0
+margin_right = 458.0
+margin_bottom = 112.0
+disabled = true
+text = "Level 3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelFour" type="Button" parent="Menu/ClassicLevels"]
+margin_left = 490.0
+margin_top = 80.0
+margin_right = 608.0
+margin_bottom = 112.0
+disabled = true
+text = "Level 4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelFive" type="Button" parent="Menu/ClassicLevels"]
+margin_left = 30.0
+margin_top = 150.0
+margin_right = 148.0
+margin_bottom = 182.0
+disabled = true
+text = "Level 5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelSix" type="Button" parent="Menu/ClassicLevels"]
+margin_left = 180.0
+margin_top = 150.0
+margin_right = 298.0
+margin_bottom = 182.0
+disabled = true
+text = "Level 6"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelSeven" type="Button" parent="Menu/ClassicLevels"]
+margin_left = 340.0
+margin_top = 150.0
+margin_right = 458.0
+margin_bottom = 182.0
+disabled = true
+text = "Level 7"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelEight" type="Button" parent="Menu/ClassicLevels"]
+margin_left = 490.0
+margin_top = 150.0
+margin_right = 608.0
+margin_bottom = 182.0
+disabled = true
+text = "Level 8"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bonus Levels" type="Control" parent="Menu"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="TitleBonus" type="Label" parent="Menu/Bonus Levels"]
+margin_left = 190.0
+margin_top = 200.0
+margin_right = 440.0
+margin_bottom = 240.0
+custom_fonts/font = ExtResource( 1 )
+text = "Bonus Levels"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HalloweenOne" type="Button" parent="Menu/Bonus Levels"]
+margin_left = 30.0
+margin_top = 270.0
+margin_right = 150.0
+margin_bottom = 300.0
+text = "Halloween 1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Christmas" type="Button" parent="Menu/Bonus Levels"]
+margin_left = 180.0
+margin_top = 270.0
+margin_right = 300.0
+margin_bottom = 300.0
+disabled = true
+text = "Coming Soon"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Easter" type="Button" parent="Menu/Bonus Levels"]
+margin_left = 340.0
+margin_top = 270.0
+margin_right = 460.0
+margin_bottom = 300.0
+disabled = true
+text = "Coming Soon"
+
+[node name="SummerVacations" type="Button" parent="Menu/Bonus Levels"]
+margin_left = 490.0
+margin_top = 270.0
+margin_right = 610.0
+margin_bottom = 300.0
+disabled = true
+text = "Coming Soon"
+
+[node name="GoBackButton" type="Button" parent="Menu"]
+margin_left = 270.0
+margin_top = 320.0
+margin_right = 370.0
+margin_bottom = 350.0
+text = "Go Back"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FadeIn" parent="." instance=ExtResource( 3 )]
+visible = false
+[connection signal="pressed" from="Menu/ClassicLevels/LevelOne" to="." method="_on_LevelOne_pressed"]
+[connection signal="pressed" from="Menu/ClassicLevels/LevelTwo" to="." method="_on_LevelTwo_pressed"]
+[connection signal="pressed" from="Menu/ClassicLevels/LevelThree" to="." method="_on_LevelThree_pressed"]
+[connection signal="pressed" from="Menu/ClassicLevels/LevelFour" to="." method="_on_LevelFour_pressed"]
+[connection signal="pressed" from="Menu/ClassicLevels/LevelFive" to="." method="_on_LevelFive_pressed"]
+[connection signal="pressed" from="Menu/ClassicLevels/LevelSix" to="." method="_on_LevelSix_pressed"]
+[connection signal="pressed" from="Menu/ClassicLevels/LevelSeven" to="." method="_on_LevelSeven_pressed"]
+[connection signal="pressed" from="Menu/ClassicLevels/LevelEight" to="." method="_on_LevelEight_pressed"]
+[connection signal="pressed" from="Menu/Bonus Levels/HalloweenOne" to="." method="_on_HalloweenOne_pressed"]
+[connection signal="pressed" from="Menu/Bonus Levels/Christmas" to="." method="_on_Christmas_pressed"]
+[connection signal="pressed" from="Menu/Bonus Levels/Easter" to="." method="_on_Easter_pressed"]
+[connection signal="pressed" from="Menu/Bonus Levels/SummerVacations" to="." method="_on_SummerVacations_pressed"]
+[connection signal="pressed" from="Menu/GoBackButton" to="." method="_on_GoBackButton_pressed"]
+[connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]
