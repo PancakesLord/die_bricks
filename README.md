@@ -5,16 +5,21 @@ Almost all the sprites used were created by myself on Gimp and are royalty free.
 __Here is the video series in question:__
 
 [Godot Tutorial] Basic Breakout! [P1]
+
 https://www.youtube.com/watch?v=ntYjl_obUDo&list=PL9FzW-m48fn1iR6WL4mjXtGi8P4TaPIAp
 
 [Godot Tutorial] Basic Breakout! [P2] Scripting!
+
 https://www.youtube.com/watch?v=GncaMNv7Fso&list=PL9FzW-m48fn1iR6WL4mjXtGi8P4TaPIAp&index=2
 
 [Godot Tutorial] Basic Breakout! [P3] Instancing
+
 https://www.youtube.com/watch?v=Kb6JU00DDxk&list=PL9FzW-m48fn1iR6WL4mjXtGi8P4TaPIAp&index=3
 
 [Godot Tutorial] Basic Breakout! [P4] Getters and Setters
+
 https://www.youtube.com/watch?v=0UiAEdEAQ74&list=PL9FzW-m48fn1iR6WL4mjXtGi8P4TaPIAp&index=4
 
 __Heartbeat's Youtube Channel:__
+
 https://www.youtube.com/channel/UCrHQNOyU1q6BFEfkNq2CYMA
