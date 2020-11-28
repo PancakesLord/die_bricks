@@ -1,0 +1,81 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://TitleScreen/Assets/Sprites/logo_diebricks.xcf.png" type="Texture" id=1]
+[ext_resource path="res://TitleScreen/Assets/Sprites/TitleScreen/ButtonLevelsèhover.png" type="Texture" id=2]
+[ext_resource path="res://TitleScreen/Assets/Sprites/TitleScreen/Button-leave-hover.png" type="Texture" id=3]
+[ext_resource path="res://TitleScreen/Assets/Sprites/TitleScreen/ButtonOptions.png" type="Texture" id=4]
+[ext_resource path="res://TitleScreen/Assets/Sprites/TitleScreen/ButtonLevels.png" type="Texture" id=5]
+[ext_resource path="res://TitleScreen/Assets/Sprites/TitleScreen/ButtonOptions-hover.png" type="Texture" id=6]
+[ext_resource path="res://TitleScreen/Assets/Sprites/TitleScreen/Button-leave.png" type="Texture" id=7]
+[ext_resource path="res://TitleScreen/Assets/Fade_In/FadeIn.tscn" type="PackedScene" id=8]
+[ext_resource path="res://TitleScreen/TitleScreen.gd" type="Script" id=9]
+
+[node name="TitleScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Logo" type="TextureRect" parent="Menu"]
+margin_right = 640.0
+margin_bottom = 160.0
+texture = ExtResource( 1 )
+stretch_mode = 4
+
+[node name="CenterRow" type="HBoxContainer" parent="Menu"]
+margin_top = 164.0
+margin_right = 640.0
+margin_bottom = 322.0
+alignment = 1
+
+[node name="Buttons" type="VBoxContainer" parent="Menu/CenterRow"]
+margin_left = 268.0
+margin_right = 368.0
+margin_bottom = 158.0
+alignment = 1
+
+[node name="LevelSelect" type="TextureButton" parent="Menu/CenterRow/Buttons"]
+margin_right = 100.0
+margin_bottom = 50.0
+texture_normal = ExtResource( 5 )
+texture_hover = ExtResource( 2 )
+texture_focused = ExtResource( 2 )
+
+[node name="Options" type="TextureButton" parent="Menu/CenterRow/Buttons"]
+margin_top = 54.0
+margin_right = 100.0
+margin_bottom = 104.0
+texture_normal = ExtResource( 4 )
+texture_hover = ExtResource( 6 )
+texture_focused = ExtResource( 6 )
+
+[node name="Quit" type="TextureButton" parent="Menu/CenterRow/Buttons"]
+margin_top = 108.0
+margin_right = 100.0
+margin_bottom = 158.0
+texture_normal = ExtResource( 7 )
+texture_hover = ExtResource( 3 )
+texture_focused = ExtResource( 3 )
+stretch_mode = 3
+
+[node name="Label" type="Label" parent="Menu/CenterRow"]
+margin_left = 372.0
+margin_top = 72.0
+margin_right = 372.0
+margin_bottom = 86.0
+
+[node name="FadeIn" parent="." instance=ExtResource( 8 )]
+visible = false
+[connection signal="pressed" from="Menu/CenterRow/Buttons/LevelSelect" to="." method="_on_LevelSelect_pressed"]
+[connection signal="pressed" from="Menu/CenterRow/Buttons/Options" to="." method="_on_Options_pressed"]
+[connection signal="pressed" from="Menu/CenterRow/Buttons/Quit" to="." method="_on_Quit_pressed"]
+[connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]
