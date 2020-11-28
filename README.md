@@ -23,3 +23,23 @@ https://www.youtube.com/watch?v=0UiAEdEAQ74&list=PL9FzW-m48fn1iR6WL4mjXtGi8P4TaP
 __Heartbeat's Youtube Channel:__
 
 https://www.youtube.com/channel/UCrHQNOyU1q6BFEfkNq2CYMA
+
+# Controls:
+
+__In the UI:__
+
+Up arrow: Go up
+
+Down arrow: Go down
+
+Enter: Use the button
+
+Right Click: A button
+
+__In Game:__
+
+Right Click: Shoot a ball
+
+Escape: Pause the game
+
+To move the paddle, move your cursor.
