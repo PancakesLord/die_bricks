@@ -34,7 +34,7 @@ Down arrow: Go down
 
 Enter: Use the button
 
-Left Click: Use button
+Left Click: Use a button
 
 __In Game:__
 
