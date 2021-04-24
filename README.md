@@ -1,5 +1,5 @@
 # Die Bricks !
-This game is training that I used to learn the Godot Engine as well as the GD Script. It is inspired by the video series "Breakout! Game" video series from HeartBeast in which he created a simple game called "Die Bricks".
+This game is a training that I used to learn the Godot Engine as well as the GD Script. It is inspired by the video series "Breakout! Game" video series from HeartBeast in which he created a simple game called "Die Bricks".
 Almost all the sprites used were created by myself on Gimp and are royalty free.
 
 __Here is the video series in question:__
